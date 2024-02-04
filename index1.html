@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ALGORHYTHM</title>
+    <meta name="description" content="Techfest 2024">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic%7CDroid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
+    <link rel="stylesheet" href="AboutButton.css">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/png" >
+    <meta name="viewport" content="width=device-width" >
+    <meta charset="UTF-8" >
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tektur"
+    />
+     <link rel="icon" href="favicon/favicon-32x32.png" type="image/png" >
+     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <script>
+  var screenSize = screen.width;
+  </script>
+  <body id="width">
+    <div id="main">
+      <div id="back">
+        <video autoplay muted loop src="./image/pexels-space-10.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-2.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-3.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-4.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-5.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-6.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-7.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-8.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-9.mp4"></video>
+        <video autoplay muted loop src="./image/pexels-space-1.mp4"></video>
+      </div>
+
+      <script>
+        
+        if (screenSize <=600){
+
+          var ChangedId = document.getElementById("back");
+          ChangedId.id = "top";
+          ChangedId.innerHTML = ' ' ;
+          ChangedId.style.position = "fixed";
+          ChangedId.style.width = "100%";
+          ChangedId.style.height = "100%";
+          ChangedId.style.overflow = "hidden";
+          ChangedId.style.top = "0";
+          ChangedId.style.left = "0";
+          ChangedId.style.zIndex = "-1";
+          var video1 = document.createElement("video");
+          ChangedId.appendChild(video1);
+          const videos = [
+              "./image/pexels-space-10.mp4",
+              "./image/mobile-1.mp4",
+              // "./image/mobile-2.mp4",
+              "./image/mobile-3.mp4",
+              "./image/pexels-space-1.mp4",
+              "./image/pexels-space-6.mp4",
+              "./image/pexels-space-4.mp4",
+              "./image/pexels_videos_3.mp4",
+          ];
+          let currentNumber = 1;
+
+          function printNumber() {
+              console.log(currentNumber);
+              video1.src = videos[currentNumber - 1];
+              currentNumber = currentNumber % 7 + 1; // Reset to 1 after reaching 10
+              setTimeout(printNumber, 10000); // Delay of 10 seconds
+          }
+
+    // Initial call to start printing numbers
+          setTimeout(printNumber, 0); // Delay for the first number
+          // var video1 = document.createElement("video");
+          // ChangedId.appendChild(video1);
+          // video1.src = 'image/compressed/mobile-space-8.mp4';
+          // function changeBg(){
+            
+          //   var num = Math.floor(Math.random() * 6) + 1;
+          //   console.log(num);
+          //   if (num == 1) {
+          //   video1.src = 'image/compressed/mobile-space-6.mp4';
+          //   }
+          //   if (num == 2) {
+          //     video1.src = 'image/compressed/mobile-space-2.mp4';
+          //   }
+          //   if (num == 3) {
+          //     video1.src = 'image/compressed/mobile-space-3.mp4';
+          //   }
+          //   if (num == 4) {
+          //     video1.src = 'image/compressed/mobile-space-4.mp4';
+          //   }
+          //   if (num == 5) {
+          //     video1.src = 'image/compressed/mobile-space-7.mp4';
+          //   }
+            // if (num == 6) {
+            //   video1.src = 'image/compressed/mobile-space-7.mp4';
+            // }
+            // if (num == 7) {
+            //   video1.src = 'image/compressed/mobile-space-7.mp4';
+            // }
+            // if (num == 8) {
+            //   video1.src = 'image/compressed/mobile-space-8.mp4';
+            // }
+            // if (num == 9) {
+            //   video1.src = 'image/compressed/mobile-space-9.mp4';
+            // }
+            // if (num == 10) {
+            //   video1.src = 'image/compressed/mobile-space-10.mp4';
+            // }
+            // if (num == 11) {
+            //   video1.src = 'image/compressed/mobile-space-11.mp4';
+            // }
+            }
+        //   changeBg();
+        //   setInterval(changeBg ,10000);
+        //         video1.autoplay = true;
+        //         video1.muted = true;
+        //         video1.loop = true;
+        //         video1.style.objectFit = "cover";
+        //         video1.style.width = "100%";
+        //         video1.style.height = "100%";
+        // }
+
+
+        video1.autoplay = true;
+                video1.muted = true;
+                video1.loop = true;
+                video1.style.objectFit = "cover";
+                video1.style.width = "100%";
+                video1.style.height = "100%";
+
+      </script>
+      <div id="top">
+        <div id="workingarea">
+          
+            <div id="nav" class="topnav">
+              <a href="index1.html"><img src="image/white tech council logo.svg" alt="home"></a>
+              <a href="Events.html">Events</a>
+              <a href="About.html">About</a>
+              <a href="ContactUs.html">Contact Us</a>
+              <a href="Gallery.html">Gallery</a>
+              <a href="https://lu.ma/mqw0w22k" id="nav5">Gate Pass</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <box-icon name='menu-alt-right' color='#ffffff' size="lg"></box-icon>
+              </a>
+            </div>
+            
+            <div id="content">
+              <div id="left">
+                <div class="name">
+                  <h1 class="heading" id="heading">Algorhythm</h1>
+                </div>
+                <div class="about-btn">
+                  <button onclick="redirectToAnotherWebsite()" class="about-us">
+                    <a href="./About.html" class="link" class="about-us">
+                    <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+                      <title id="link1-title">Come quick and click this</title>
+                      <desc id="link1-desc">A rotating link with text placed around a circle with an arrow inside</desc>
+
+                      <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+
+                      <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+
+                      <text class="link__text">
+                        <textPath href="#link-circle" stroke="none">
+                          About Us About Us About Us
+                        </textPath>
+                      </text>
+                    </svg>
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+             <div class="insta">
+                <h2>Follow us for more >>> </h2>
+                <a href="https://www.instagram.com/technical_council.vit?igsh=bTh0dTdoeHd6a3Nn"><i class="fa-brands fa-instagram insta-logo"></i></a>
+              </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
